@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>FAQ dynamique (JSON externe)</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    margin: 40px;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+#searchBox {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.faq-item {
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+.faq-title {
+    padding: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+
+.faq-title:hover {
+    background: #eef5ff;
+}
+
+.faq-title::after {
+    content: "▼";
+    position: absolute;
+    right: 16px;
+    transition: transform 0.2s;
+}
+
+.faq-item.open .faq-title::after {
+    transform: rotate(-180deg);
+}
+
+.faq-description {
+    display: none;
+    padding: 16px;
+    border-top: 1px solid #eee;
+    color: #444;
+    white-space: pre-line;
+}
+
+.faq-item.open .faq-description {
+    display: block;
+}
+
+.highlight {
+    background: yellow;
+    padding: 0 2px;
+    border-radius: 3px;
+}
+
+#noResults {
+    display: none;
+    color: #888;
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>FAQ</h1>
+
+<input id="searchBox" type="text" placeholder="Rechercher...">
+
+<div id="faqList">Chargement...</div>
+
+<div id="noResults">Aucun résultat</div>
+
+<script>
+const list = document.getElementById("faqList");
+const searchBox = document.getElementById("searchBox");
+const noResults = document.getElementById("noResults");
+
+let faqData = [];
+
+// 🔹 Fonction pour charger JSON
+function loadJSON() {
+    fetch("devFAQ.json")
+        .then(response => {
+            if (!response.ok) throw new Error("Fetch failed");
+            return response.json();
+        })
+        .then(data => {
+            faqData = data;
+            renderFAQ(faqData);
+        })
+        .catch(() => {
+            // 🔹 Fallback pour ouverture locale
+            loadJSONviaXHR();
+        });
+}
+
+// 🔹 Méthode alternative compatible file://
+function loadJSONviaXHR() {
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", "faq.json", true);
+
+    xhr.onload = function () {
+        if (xhr.status === 200 || xhr.status === 0) {
+            faqData = JSON.parse(xhr.responseText);
+            renderFAQ(faqData);
+        } else {
+            list.innerHTML =
+                "Impossible de charger faq.json.<br>Vérifie qu'il est dans le même dossier.";
+        }
+    };
+
+    xhr.onerror = function () {
+        list.innerHTML = "Erreur de chargement du fichier JSON";
+    };
+
+    xhr.send();
+}
+
+// 🔹 Rendu FAQ
+function renderFAQ(data) {
+    list.innerHTML = "";
+
+    data.forEach(item => {
+        const div = document.createElement("div");
+        div.className = "faq-item";
+
+        div.innerHTML = `
+            <div class="faq-title">${item.title}</div>
+            <div class="faq-description">${item.description}</div>
+        `;
+
+        div.querySelector(".faq-title")
+           .addEventListener("click", () => {
+               div.classList.toggle("open");
+           });
+
+        list.appendChild(div);
+    });
+}
+
+// 🔹 Surlignage
+function highlight(text, search) {
+    if (!search) return text;
+
+    const regex = new RegExp(`(${search})`, "gi");
+    return text.replace(regex, '<span class="highlight">$1</span>');
+}
+
+// 🔹 Recherche
+searchBox.addEventListener("input", () => {
+    const value = searchBox.value.toLowerCase();
+
+    const filtered = faqData.filter(item =>
+        item.title.toLowerCase().includes(value)
+    );
+
+    renderFAQ(filtered);
+
+    document.querySelectorAll(".faq-title").forEach(el => {
+        const original = el.textContent;
+        el.innerHTML = highlight(original, value);
+    });
+
+    noResults.style.display =
+        filtered.length === 0 ? "block" : "none";
+});
+
+// 🔹 Lancement
+loadJSON();
+</script>
+
+</body>
+</html>

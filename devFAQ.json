@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Entra (Microsoft Entra)",
+    "description": "Microsoft Entra est la plateforme d’identité et d’accès de Microsoft (anciennement Azure Active Directory / Azure AD).\nElle gère : \nles utilisateurs (employés) \nles mots de passe \nles groupes \nles permissions \nl’authentification"
+  },
+  {
+    "title": "Azure",
+    "description": "Azure est la plateforme cloud de Microsoft.\nElle permet d'héberger applications et bases de données."
+  },
+  {
+    "title": "SQL",
+    "description": "SQL est blablabalbals\nasalbasl asfas fas\nabsllasl saf sf asf"
+  },
+  {
+    "title": "Visual Studio",
+    "description": "Visual Studio est un IDE puissant pour développer en C#, C++, JS, etc."
+  },
+  {
+    "title": "Cloud",
+    "description": "Le cloud permet d'utiliser des ressources informatiques via Internet."
+  }
+]
