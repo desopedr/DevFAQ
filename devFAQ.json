@@ -1,22 +1,79 @@
 [
   {
-    "title": "Entra (Microsoft Entra)",
+    "title": "ENTRA (Microsoft Entra)",
     "description": "Microsoft Entra est la plateforme d’identité et d’accès de Microsoft (anciennement Azure Active Directory / Azure AD).\nElle gère : \nles utilisateurs (employés) \nles mots de passe \nles groupes \nles permissions \nl’authentification"
   },
   {
-    "title": "Azure",
-    "description": "Azure est la plateforme cloud de Microsoft.\nElle permet d'héberger applications et bases de données."
+    "title": "ADR (Architecture Decision Record)",
+    "description": "L'ADR est un journal de décisions prises par l'équipe de développement. \nLes décisions peuvent être : Quel type de bases de données, quelle architecture, quel langage, quelle modélisation, etc."
   },
   {
-    "title": "SQL",
-    "description": "SQL est blablabalbals\nasalbasl asfas fas\nabsllasl saf sf asf"
+    "title": "CNS (Context name service)",
+    "description": "Context name service (inventé par Thibaut, un peu comme un DNS qui fourni la bonne ip etc, là ça serait pour un contexte et fournir une connectionString, un Realm ou autre).\nQualif/Persistence/IAM vont demander à cette LIB une connectionString ou autre chose (par le biais de Dimensions)"
   },
   {
-    "title": "Visual Studio",
-    "description": "Visual Studio est un IDE puissant pour développer en C#, C++, JS, etc."
+    "title": "COLD START (démarrage à froid)",
+    "description": "Le 'démarrage à froid' ou 'COLD start' permet de relancer un Automation Engine sans qu'aucune tâche ne soit lancée: toutes les queues des tâches sont vidées. Il est recommandé d'effectuer un COLD start en cas de baisse de performance d'un Automation Engine, ou encore lors d'une mise à jour"
   },
   {
-    "title": "Cloud",
-    "description": "Le cloud permet d'utiliser des ressources informatiques via Internet."
+    "title": "DTO (data transfer object)",
+    "description": "Un objet de transfert de données (data transfer object ou DTO en anglais) est un patron de conception utilisé dans les architectures logicielles objets. \nSon but est de simplifier les transferts de données entre les sous-systèmes d'une application logicielle."
+  },
+  {
+    "title": "KEYCLOAK",
+    "description": "Keycloak est une solution open-source qui permet l'implantation interne d'un SSO (single sign-on) pour gérer les authentifications sur vos systèmes et vos applications. \nLors de l'élaboration de vos projets, cette solution facilite la mise en place d'une authentification sur votre application"
+  },
+  {
+    "title": "SBX (Sandbox)",
+    "description": "Une sandbox (bac à sable) est un environnement informatique sécurisé et isolé qui permet d'exécuter des programmes, tester des logiciels ou ouvrir des fichiers suspects sans risquer d'endommager le système hôte, le réseau ou d'autres applications"
+  },
+  {
+    "title": "SCABILITY",
+    "description": "La scalabilité est un terme employé dans le domaine de l'informatique matérielle et logicielle, pour définir la faculté d'un produit informatique à s'adapter aux fluctuations de la demande en conservant ses différentes fonctionnalités."
+  },
+  {
+    "title": "SENTRY",
+    "description": "Sentry est une plateforme logicielle open source utilisée pour suivre, gérer et corriger les erreurs dans les applications. \nElle fonctionne en collectant des informations sur les erreurs et les exceptions qui se produisent dans le code et en fournissant une interface intuitive pour visualiser et analyser ces problèmes."
+  },
+  {
+    "title": "TERRAFORM",
+    "description": "Terraform est un outil IAC, utilisé principalement par les équipes DevOps pour automatiser diverses tâches d'infrastructure. \nLe provisionnement de ressources cloud, par exemple, est l'un des principaux cas d'utilisation de Terraform."
+  },
+  {
+    "title": "YAGNI",
+    "description": "YAGNI (anglicisme, acronyme anglais de you ain't gonna need it, qui peut se traduire par « vous n'en aurez pas besoin »). \nC'est un principe d'extreme programming qui déclare que les programmeurs ne devraient pas ajouter de fonctionnalité à un logiciel tant que celle-ci n'est pas absolument nécessaire."
+  },
+  {
+    "title": "SENDGRID",
+    "description": "Desc"
+  },
+  {
+    "title": "MONGODB",
+    "description": "Base de données NoSQL orientée documents. \nStocke des données en JSON/BSON (documents) \nPas de schéma fixe \nTrès utilisée pour applications web modernes \nScalabilité horizontale facile \nAlternative aux bases SQL classiques (MySQL, SQL Server)"
+  },
+  {
+    "title": "BLOB STORAGE",
+    "description": "Azure Blob Storage \nStockage d’objets pour fichiers volumineux. \nImages, vidéos, sauvegardes, logs, documents \nPas une base de données \nTrès utilisé dans le cloud \nBlob = Binary Large Object"
+  },
+  {
+    "title": "Titre",
+    "description": "Desc"
+  },
+  {
+    "title": "Titre",
+    "description": "Desc"
+  },
+  {
+    "title": "Titre",
+    "description": "Desc"
+  },
+  {
+    "title": "Titre",
+    "description": "Desc"
+  },
+  {
+    "title": "Titre",
+    "description": "Desc"
   }
 ]
+
