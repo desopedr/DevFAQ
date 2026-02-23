@@ -56,24 +56,61 @@
     "description": "Azure Blob Storage \nStockage d’objets pour fichiers volumineux. \nImages, vidéos, sauvegardes, logs, documents \nPas une base de données \nTrès utilisé dans le cloud \nBlob = Binary Large Object"
   },
   {
-    "title": "Titre",
+    "title": "IOT (Internet of Things)",
+    "description": "L'Internet des Objets (IoT) désigne un vaste réseau d'objets physiques (capteurs, machines, appareils) connectés à Internet, capables de collecter, échanger des données et automatiser des tâches sans intervention humaine. Il transforme des objets du quotidien en outils intelligents, générant une grande quantité de données pour optimiser les performances."
+  },
+  {
+    "title": "LIFT AND SHIFT",
+    "description": "La migration « Lift and Shift », également appelée réhébergement ou migration sans modification, est une approche de migration cloud où les applications et l'infrastructure sont déplacées d'un environnement à l'autre sans apporter de modifications substantielles à l'architecture sous-jacente."
+  },
+  {
+    "title": "ON PREMISE",
     "description": "Desc"
   },
   {
-    "title": "Titre",
+    "title": "STRUCTURIZR",
     "description": "Desc"
   },
   {
-    "title": "Titre",
+    "title": "C4",
     "description": "Desc"
   },
   {
-    "title": "Titre",
+    "title": "AIB",
     "description": "Desc"
   },
   {
-    "title": "Titre",
+    "title": "system assign vs user assign",
+    "description": "Desc"
+  },
+  {
+    "title": "OLAP",
+    "description": "Desc"
+  },
+  {
+    "title": "DEPENDABOT",
+    "description": "Desc"
+  },
+  {
+    "title": "OLTP",
+    "description": "Desc"
+  },
+  {
+    "title": "APIM",
+    "description": "Desc"
+  },
+  {
+    "title": "COSMOS",
+    "description": "Desc"
+  },
+  {
+    "title": "serialization",
+    "description": "Desc"
+  },
+  {
+    "title": "IaC",
     "description": "Desc"
   }
 ]
+
 
