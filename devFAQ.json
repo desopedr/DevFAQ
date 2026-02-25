@@ -110,7 +110,16 @@
   {
     "title": "IaC",
     "description": "Desc"
+  },
+   {
+    "title": "DAPR (Distributed Application Runtime)",
+    "description": "Desc"
+  }, 
+  {
+    "title": "Kubernetes",
+    "description": "Desc"
   }
 ]
+
 
 
