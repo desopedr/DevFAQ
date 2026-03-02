@@ -1,202 +1,48 @@
-[
-  {
-    "title": "ENTRA (Microsoft Entra)",
-    "description": "Microsoft Entra est la plateforme d’identité et d’accès de Microsoft (anciennement Azure Active Directory / Azure AD).\nElle gère : \nles utilisateurs (employés) \nles mots de passe \nles groupes \nles permissions \nl’authentification"
-  },
-  {
-    "title": "ADR (Architecture Decision Record)",
-    "description": "L'ADR est un journal de décisions prises par l'équipe de développement. \nLes décisions peuvent être : Quel type de bases de données, quelle architecture, quel langage, quelle modélisation, etc."
-  },
-  {
-    "title": "CNS (Context name service)",
-    "description": "Context name service (inventé par Thibaut, un peu comme un DNS qui fourni la bonne ip etc, là ça serait pour un contexte et fournir une connectionString, un Realm ou autre).\nQualif/Persistence/IAM vont demander à cette LIB une connectionString ou autre chose (par le biais de Dimensions)"
-  },
-  {
-    "title": "COLD START (démarrage à froid)",
-    "description": "Le 'démarrage à froid' ou 'COLD start' permet de relancer un Automation Engine sans qu'aucune tâche ne soit lancée: toutes les queues des tâches sont vidées. Il est recommandé d'effectuer un COLD start en cas de baisse de performance d'un Automation Engine, ou encore lors d'une mise à jour"
-  },
-  {
-    "title": "DTO (data transfer object)",
-    "description": "Un objet de transfert de données (data transfer object ou DTO en anglais) est un patron de conception utilisé dans les architectures logicielles objets. \nSon but est de simplifier les transferts de données entre les sous-systèmes d'une application logicielle."
-  },
-  {
-    "title": "KEYCLOAK",
-    "description": "Keycloak est une solution open-source qui permet l'implantation interne d'un SSO (single sign-on) pour gérer les authentifications sur vos systèmes et vos applications. \nLors de l'élaboration de vos projets, cette solution facilite la mise en place d'une authentification sur votre application"
-  },
-  {
-    "title": "SBX (Sandbox)",
-    "description": "Une sandbox (bac à sable) est un environnement informatique sécurisé et isolé qui permet d'exécuter des programmes, tester des logiciels ou ouvrir des fichiers suspects sans risquer d'endommager le système hôte, le réseau ou d'autres applications"
-  },
-  {
-    "title": "SCABILITY",
-    "description": "La scalabilité est un terme employé dans le domaine de l'informatique matérielle et logicielle, pour définir la faculté d'un produit informatique à s'adapter aux fluctuations de la demande en conservant ses différentes fonctionnalités."
-  },
-  {
-    "title": "SENTRY",
-    "description": "Sentry est une plateforme logicielle open source utilisée pour suivre, gérer et corriger les erreurs dans les applications. \nElle fonctionne en collectant des informations sur les erreurs et les exceptions qui se produisent dans le code et en fournissant une interface intuitive pour visualiser et analyser ces problèmes."
-  },
-  {
-    "title": "TERRAFORM",
-    "description": "Terraform est un outil IAC, utilisé principalement par les équipes DevOps pour automatiser diverses tâches d'infrastructure. \nLe provisionnement de ressources cloud, par exemple, est l'un des principaux cas d'utilisation de Terraform."
-  },
-  {
-    "title": "YAGNI",
-    "description": "YAGNI (anglicisme, acronyme anglais de you ain't gonna need it, qui peut se traduire par « vous n'en aurez pas besoin »). \nC'est un principe d'extreme programming qui déclare que les programmeurs ne devraient pas ajouter de fonctionnalité à un logiciel tant que celle-ci n'est pas absolument nécessaire."
-  },
-  {
-    "title": "SENDGRID",
-    "description": "SendGrid (propriété de Twilio) est une plateforme cloud leader de services de messagerie, utilisée pour l'envoi massif d'emails transactionnels (confirmation, réinitialisation de mot de passe) et marketing (newsletters). Il garantit une haute délivrabilitéévite le spam et permet d'envoyer des courriels via une API ou un relais SMTP, s'épargnant ainsi la maintenance de serveurs propres"
-  },
-  {
-    "title": "MONGODB",
-    "description": "Base de données NoSQL orientée documents. \nStocke des données en JSON/BSON (documents) \nPas de schéma fixe \nTrès utilisée pour applications web modernes \nScalabilité horizontale facile \nAlternative aux bases SQL classiques (MySQL, SQL Server)"
-  },
-  {
-    "title": "BLOB STORAGE",
-    "description": "Azure Blob Storage \nStockage d’objets pour fichiers volumineux. \nImages, vidéos, sauvegardes, logs, documents \nPas une base de données \nTrès utilisé dans le cloud \nBlob = Binary Large Object"
-  },
-  {
-    "title": "IOT (Internet of Things)",
-    "description": "L'Internet des Objets (IoT) désigne un vaste réseau d'objets physiques (capteurs, machines, appareils) connectés à Internet, capables de collecter, échanger des données et automatiser des tâches sans intervention humaine. Il transforme des objets du quotidien en outils intelligents, générant une grande quantité de données pour optimiser les performances."
-  },
-  {
-    "title": "LIFT AND SHIFT",
-    "description": "La migration « Lift and Shift », également appelée réhébergement ou migration sans modification, est une approche de migration cloud où les applications et l'infrastructure sont déplacées d'un environnement à l'autre sans apporter de modifications substantielles à l'architecture sous-jacente."
-  },
-  {
-    "title": "ON PREMISE",
-    "description": "Infrastructure hébergée localement: serveurs dans l’entreprise, pas dans le cloud, maintenance interne.\nOpposé de cloud computing.\n« On-premise » (ou sur site) désigne un modèle de déploiement informatique où les logiciels et les infrastructures sont installés, hébergés et maintenus directement dans les locaux ou sur les serveurs physiques d'une entreprise.\nContrairement au Cloud, l'entreprise est propriétaire de ses données et responsable de leur sécurité."
-  },
-  {
-    "title": "STRUCTURIZR",
-    "description": "Structurizr est un outil 'Architecture-as-Code' et un ensemble de bibliothèques permettant de créer des diagrammes d'architecture logicielle.\nOutil pour modéliser l’architecture logicielle.\nBasé sur le modèle C4.\nDiagrammes générés depuis du code.\nDocumentation d’architecture vivante."
-  },
-  {
-    "title": "AaC (Architecture-as-Code) vs IaC (Infrastructure as Code)",
-    "description": "AaC est une approche moderne de l'ingénierie logicielle qui consiste à définir, documenter et gérer l'architecture d'un système (logiciel ou infrastructure) sous forme de fichiers de code ou de fichiers de configuration lisibles par une machine.\n\nIaC, Gestion de l’infrastructure par code.\nDéploiement automatisé\nReproductibilité\nVersionnable\nExemples d’outils: \nTerraform\nBicep\nARM templates\nCloudFormation"
-  },
-  {
-    "title": "Azure App Function",
-    "description": "Fonction exécutée sans gérer de serveur (serverless).\nS’exécute sur événement (HTTP, timer, message…).\nIdéal pour micro-services ou automatisations.\nFacturation à l’exécution"
-  },
-  {
-    "title": "OLAP (Online Analytical Processing) ",
-    "description": "Systèmes optimisés pour l’analyse.\nRequêtes complexes\nAgrégations, statistiques\nDonnées historiques\nData warehouse, BI, reporting"
-  },
-  {
-    "title": "DEPENDABOT",
-    "description": "GitHub\nOutil automatique qui met à jour les dépendances d’un projet.\nDétecte failles de sécurité\nPropose des Pull Requests automatiques\nIntégré à GitHub"
-  },
-  {
-    "title": "OLTP (Online Transactional Processing)",
-    "description": "OLTP (Online Transaction Processing)\nSystèmes optimisés pour les transactions opérationnelles.\nBeaucoup d’écritures rapides\nDonnées actuelles\nExemples : applications métier, e-commerce\nBase transactionnelle."
-  },
-  {
-    "title": "Azure APIM (API Management)",
-    "description": "Azure API Management\nPasserelle pour gérer des APIs.\nFonctions principales :\nSécurité (authentification, quotas)\nMonitoring\nVersioning\nPortail développeur\nTransformation des requêtes\n👉 API Gateway + gestion complète"
-  },
-  {
-    "title": "COSMOS",
-    "description": "Azure Cosmos DB\nBase NoSQL distribuée globalement.\nTrès haute disponibilité\nMulti-modèles (SQL API, Mongo API…)\nFaible latence mondiale\n👉 Conçue pour applications cloud à grande échelle"
-  },
-  {
-    "title": "SERIALIZATION",
-    "description": "Transformation d’un objet en format transportable. \nExemples: JSON, XML, Binary. \nUtilisé pour: API, stockage, files de messages, transmission réseau"
-  },
-   {
-    "title": "DAPR (Distributed Application Runtime)",
-    "description": "Runtime open-source pour simplifier le développement de microservices.\nDAPR fournit des blocs prêts à l’emploi: \nService-to-service communication\nPub/Sub\nState management\nSecrets\nObservabilité\n👉 Il fonctionne en sidecar avec Kubernetes ou localement.\nBut : écrire du code métier sans gérer la complexité réseau/distribuée."
-  }, 
-  {
-    "title": "Azure Service Fabric",
-    "description": "Plateforme Microsoft pour construire des applications distribuées et microservices.\nCaractéristiques :\nGestion de clusters\nHaute disponibilité\nAuto-scaling\nSupport containers + services stateful\n👉 Utilisé historiquement pour des systèmes massifs comme Azure SQL Database.\n⚠️ Aujourd’hui, beaucoup d’architectures modernes préfèrent Kubernetes."
-  },
-  {
-    "title": "Azure Kubernetes",
-    "description": "Plateforme open-source d’orchestration de conteneurs.\nIl permet de :\nDéployer des containers (Docker)\nGérer le scaling automatique\nFaire du rolling update\nGérer la haute disponibilité\nSuperviser les services\n👉 C’est devenu le standard pour les architectures cloud-native.\nDans Azure: \nAzure Kubernetes Service (AKS)"
-  },
-  {
-    "title": "SNYK",
-    "description": "Outil de sécurité pour développeurs.\nFonctions :\nScan des dépendances\nDétection de vulnérabilités\nAnalyse de containers\nAnalyse de code (SAST)\n👉 Intégré à GitHub, GitLab, Azure DevOps…\nObjectif : sécuriser le code dès le développement (Shift Left Security)."
-  },
-  {
-    "title": "IAM (Identity and Access Management)",
-    "description": "IAM = Gestion des identités et des accès.\nIl concerne: \n🔑 Authentification → Qui es-tu ?\n🛂 Autorisation → As-tu le droit ?\n👥 Gestion des rôles\n🔐 Politiques d’accès\nExemples de solutions: \nMicrosoft Entra ID (anciennement Azure AD)\nAuth0\nOkta"
-  },
-   {
-    "title": "C4 MODEL",
-    "description": "Méthode pour décrire une architecture logicielle en 4 niveaux :\nContext — système dans son environnement\nContainer — applications / services\nComponent — composants internes\nCode — classes / implémentation\n👉 Très utilisé pour architecture moderne\nLe modèle C4 est une technique de modélisation graphique « allégée » pour documenter l'architecture logicielle, structurée en quatre niveaux hiérarchiques (Context, Containers, Components, Code). Il permet de visualiser un système à différents niveaux de détail, allant de la vue d'ensemble aux détails techniques, facilitant ainsi la communication au sein des équipes de développement."
-  }, 
-  {
-    "title": "Azure Service Bus",
-    "description": "Système de messagerie entre applications.\nFiles d’attente (queues).\nTopics (pub/sub).\nCommunication asynchrone fiable. Permet de découpler les systèmes"
-  },
-  {
-    "title": "BFF (Backend For Frontend)",
-    "description": "Pattern d’architecture.\n👉 Un backend spécifique pour chaque type de client :\nWeb\nMobile\nTablet\nIoT\nBut : optimiser les réponses pour chaque interface."
-  },
-  {
-    "title": "Azure Regions & Availability Zones",
-    "description": "\nRegion = zone géographique (ex: West Europe)\nAvailability Zone (AZ) = datacenters séparés physiquement dans une même région\nPermet haute disponibilité et résilience\n👉 Un architecte doit toujours penser résilience régionale et multi-zone."
-  },
-  {
-    "title": "Azure Subscription",
-    "description": "Unité de facturation\nLimite de quotas\nIsolation logique\n👉 Architecture entreprise = souvent plusieurs subscriptions."
-  },
-  {
-    "title": "Azure Resource Group",
-    "description": "Conteneur logique pour regrouper des ressources Azure.\nGestion simplifiée\nDéploiement par environnement (Dev / Test / Prod)\nSuppression groupée possible"
-  },
-  {
-    "title": "Azure Key Vault",
-    "description": "Stockage sécurisé: \nSecrets\nClés\nCertificats\nJamais de secrets en dur dans le code."
-  },
-  {
-    "title": "VNet (Virtual Network)",
-    "description": "Réseau privé Azure.\nSubnets\nIsolation\nPrivate endpoints"
-  },
-  {
-    "title": "Load Balancer",
-    "description": "Distribution du trafic.\nHaute disponibilité"
-  },
-  {
-    "title": "Private Endpoint",
-    "description": "Connexion privée à un service PaaS (ex : base de données) sans passer par Internet.\n👉 Concept clé en entreprise."
-  },
-  {
-    "title": "Azure App Service",
-    "description": "Azure App Service\nHébergement simplifié d’applications web/API."
-  },
-  {
-    "title": "CI/CD (Continuous Integration / Continuous Delivery)",
-    "description": "CI – Continuous Integration\nPrincipe: \nChaque modification de code est automatiquement :\nBuild\nTestée\nValidée\n\nObjectif: \nDétecter les erreurs tôt\nÉviter les conflits massifs\nMaintenir un code toujours intégrable\n\nCD – Continuous Delivery / Deployment\nAprès validation: \nPackaging automatique\nDéploiement automatique (staging / prod)\nRollback possible\n\nExemple dans Azure\nAzure DevOps\nGitHub Actions\n\nPipeline typique: \nCommit\nBuild\nTests unitaires\nScan sécurité (Snyk / Defender)\nCréation image Docker\nPush vers registry\nDéploiement AKS / App Service"
-  },
-  {
-    "title": "Azure Policy",
-    "description": "Outil de gouvernance.\nPermet de :\nImposer des règles\nAuditer la conformité\nBloquer des déploiements\n\n📌 Exemples concrets\nInterdire création de VM sans tag\nForcer chiffrement stockage\nAutoriser seulement certaines régions\nObliger SKU spécifique"
-  },
-  {
-    "title": "Event-Driven Architecture",
-    "description": "Basée sur événements (Service Bus, Event Grid)."
-  },
-  {
-    "title": "PaaS vs IaaS vs SaaS",
-    "description": "🖥️ IaaS (Infrastructure as a Service)\nTu gères :\nVM\nOS\nPatchs\nMiddleware\nAzure exemple : Virtual Machines\n👉 Flexibilité maximale\n👉 Responsabilité maximale\n\n⚙️ PaaS (Platform as a Service)\nAzure gère :\nInfrastructure\nOS\nRuntime\nTu gères :\nTon code\nExemples :\nAzure App Service\nAzure SQL Database\nAzure Functions\n👉 Recommandé dans 80% des architectures modernes\n\n🌍 SaaS (Software as a Service)\nTu consommes un logiciel prêt à l’emploi.\nExemples :\nMicrosoft 365\nSalesforce\n👉 Aucune gestion technique\n\n🎯 Vision Architecte\nToujours privilégier :\nSaaS > PaaS > IaaS\nPourquoi ?\nMoins de maintenance\nMoins de surface d’attaque\nMoins de coût opérationnel"
-  },
-  {
-    "title": "CQRS (Command Query Responsibility Segregation)",
-    "description": "Pattern d’architecture. Principe :\n🔹 Command = écriture\n🔹 Query = lecture\nOn sépare les modèles et parfois les bases de données.\n\n🎯 Pourquoi ? Parce que: \nLes lectures sont nombreuses\nLes écritures ont logique métier complexe\nLes besoins de performance diffèrent\n\n🏗️ Exemple Azure: \nÉcriture → Azure SQL\nLecture → Azure Cosmos DB\nSynchronisation via Service Bus\n\n🧠 Architecte avancé CQRS peut être combiné avec :\nEvent Sourcing\nArchitecture événementielle\nMicroservices"
-  },
-  {
-    "title": "SYSTEM ASSIGNED vs USER ASSIGNED (Managed Identity Azure)",
-    "description": "🔹 System-assigned\nIdentité créée automatiquement pour une ressource\nLiée à cette ressource uniquement\nSupprimée si la ressource est supprimée\n👉 Simple mais non réutilisable\n\n🔹 User-assigned\nIdentité indépendante\nPeut être attachée à plusieurs ressources\nPersiste même si une ressource est supprimée\n👉 Réutilisable et plus flexible"
-  }
-]
-
-
-
-
-
-
-
-
+{ "title": "AaC (Architecture-as-Code) vs IaC (Infrastructure as Code)", "description": "AaC est une approche moderne de l'ingénierie logicielle qui consiste à définir, documenter et gérer l'architecture d'un système (logiciel ou infrastructure) sous forme de fichiers de code ou de fichiers de configuration lisibles par une machine.\n\nIaC, Gestion de l’infrastructure par code.\nDéploiement automatisé\nReproductibilité\nVersionnable\nExemples d’outils: \nTerraform\nBicep\nARM templates\nCloudFormation" },
+{ "title": "ADR (Architecture Decision Record)", "description": "L'ADR est un journal de décisions prises par l'équipe de développement. \nLes décisions peuvent être : Quel type de bases de données, quelle architecture, quel langage, quelle modélisation, etc." },
+{ "title": "Azure APIM (API Management)", "description": "Azure API Management\nPasserelle pour gérer des APIs.\nFonctions principales :\nSécurité (authentification, quotas)\nMonitoring\nVersioning\nPortail développeur\nTransformation des requêtes\n👉 API Gateway + gestion complète" },
+{ "title": "Azure App Function", "description": "Fonction exécutée sans gérer de serveur (serverless).\nS’exécute sur événement (HTTP, timer, message…).\nIdéal pour micro-services ou automatisations.\nFacturation à l’exécution" },
+{ "title": "Azure App Service", "description": "Azure App Service\nHébergement simplifié d’applications web/API." },
+{ "title": "Azure Key Vault", "description": "Stockage sécurisé: \nSecrets\nClés\nCertificats\nJamais de secrets en dur dans le code." },
+{ "title": "Azure Kubernetes", "description": "Plateforme open-source d’orchestration de conteneurs.\nIl permet de :\nDéployer des containers (Docker)\nGérer le scaling automatique\nFaire du rolling update\nGérer la haute disponibilité\nSuperviser les services\n👉 C’est devenu le standard pour les architectures cloud-native.\nDans Azure: \nAzure Kubernetes Service (AKS)" },
+{ "title": "Azure Policy", "description": "Outil de gouvernance.\nPermet de :\nImposer des règles\nAuditer la conformité\nBloquer des déploiements\n\n📌 Exemples concrets\nInterdire création de VM sans tag\nForcer chiffrement stockage\nAutoriser seulement certaines régions\nObliger SKU spécifique" },
+{ "title": "Azure Regions & Availability Zones", "description": "\nRegion = zone géographique (ex: West Europe)\nAvailability Zone (AZ) = datacenters séparés physiquement dans une même région\nPermet haute disponibilité et résilience\n👉 Un architecte doit toujours penser résilience régionale et multi-zone." },
+{ "title": "Azure Resource Group", "description": "Conteneur logique pour regrouper des ressources Azure.\nGestion simplifiée\nDéploiement par environnement (Dev / Test / Prod)\nSuppression groupée possible" },
+{ "title": "Azure Service Bus", "description": "Système de messagerie entre applications.\nFiles d’attente (queues).\nTopics (pub/sub).\nCommunication asynchrone fiable. Permet de découpler les systèmes" },
+{ "title": "Azure Service Fabric", "description": "Plateforme Microsoft pour construire des applications distribuées et microservices.\nCaractéristiques :\nGestion de clusters\nHaute disponibilité\nAuto-scaling\nSupport containers + services stateful\n👉 Utilisé historiquement pour des systèmes massifs comme Azure SQL Database.\n⚠️ Aujourd’hui, beaucoup d’architectures modernes préfèrent Kubernetes." },
+{ "title": "Azure Subscription", "description": "Unité de facturation\nLimite de quotas\nIsolation logique\n👉 Architecture entreprise = souvent plusieurs subscriptions." },
+{ "title": "BFF (Backend For Frontend)", "description": "Pattern d’architecture.\n👉 Un backend spécifique pour chaque type de client :\nWeb\nMobile\nTablet\nIoT\nBut : optimiser les réponses pour chaque interface." },
+{ "title": "BLOB STORAGE", "description": "Azure Blob Storage \nStockage d’objets pour fichiers volumineux. \nImages, vidéos, sauvegardes, logs, documents \nPas une base de données \nTrès utilisé dans le cloud \nBlob = Binary Large Object" },
+{ "title": "C4 MODEL", "description": "Méthode pour décrire une architecture logicielle en 4 niveaux :\nContext — système dans son environnement\nContainer — applications / services\nComponent — composants internes\nCode — classes / implémentation\n👉 Très utilisé pour architecture moderne\nLe modèle C4 est une technique de modélisation graphique « allégée » pour documenter l'architecture logicielle, structurée en quatre niveaux hiérarchiques (Context, Containers, Components, Code). Il permet de visualiser un système à différents niveaux de détail, allant de la vue d'ensemble aux détails techniques, facilitant ainsi la communication au sein des équipes de développement." },
+{ "title": "CI/CD (Continuous Integration / Continuous Delivery)", "description": "CI – Continuous Integration\nPrincipe: \nChaque modification de code est automatiquement :\nBuild\nTestée\nValidée\n\nObjectif: \nDétecter les erreurs tôt\nÉviter les conflits massifs\nMaintenir un code toujours intégrable\n\nCD – Continuous Delivery / Deployment\nAprès validation: \nPackaging automatique\nDéploiement automatique (staging / prod)\nRollback possible\n\nExemple dans Azure\nAzure DevOps\nGitHub Actions\n\nPipeline typique: \nCommit\nBuild\nTests unitaires\nScan sécurité (Snyk / Defender)\nCréation image Docker\nPush vers registry\nDéploiement AKS / App Service" },
+{ "title": "CNS (Context name service)", "description": "Context name service (inventé par Thibaut, un peu comme un DNS qui fourni la bonne ip etc, là ça serait pour un contexte et fournir une connectionString, un Realm ou autre).\nQualif/Persistence/IAM vont demander à cette LIB une connectionString ou autre chose (par le biais de Dimensions)" },
+{ "title": "COLD START (démarrage à froid)", "description": "Le 'démarrage à froid' ou 'COLD start' permet de relancer un Automation Engine sans qu'aucune tâche ne soit lancée: toutes les queues des tâches sont vidées. Il est recommandé d'effectuer un COLD start en cas de baisse de performance d'un Automation Engine, ou encore lors d'une mise à jour" },
+{ "title": "COSMOS", "description": "Azure Cosmos DB\nBase NoSQL distribuée globalement.\nTrès haute disponibilité\nMulti-modèles (SQL API, Mongo API…)\nFaible latence mondiale\n👉 Conçue pour applications cloud à grande échelle" },
+{ "title": "CQRS (Command Query Responsibility Segregation)", "description": "Pattern d’architecture. Principe :\n🔹 Command = écriture\n🔹 Query = lecture\nOn sépare les modèles et parfois les bases de données.\n\n🎯 Pourquoi ? Parce que: \nLes lectures sont nombreuses\nLes écritures ont logique métier complexe\nLes besoins de performance diffèrent\n\n🏗️ Exemple Azure: \nÉcriture → Azure SQL\nLecture → Azure Cosmos DB\nSynchronisation via Service Bus\n\n🧠 Architecte avancé CQRS peut être combiné avec :\nEvent Sourcing\nArchitecture événementielle\nMicroservices" },
+{ "title": "DAPR (Distributed Application Runtime)", "description": "Runtime open-source pour simplifier le développement de microservices.\nDAPR fournit des blocs prêts à l’emploi: \nService-to-service communication\nPub/Sub\nState management\nSecrets\nObservabilité\n👉 Il fonctionne en sidecar avec Kubernetes ou localement.\nBut : écrire du code métier sans gérer la complexité réseau/distribuée." },
+{ "title": "DEPENDABOT", "description": "GitHub\nOutil automatique qui met à jour les dépendances d’un projet.\nDétecte failles de sécurité\nPropose des Pull Requests automatiques\nIntégré à GitHub" },
+{ "title": "DTO (data transfer object)", "description": "Un objet de transfert de données (data transfer object ou DTO en anglais) est un patron de conception utilisé dans les architectures logicielles objets. \nSon but est de simplifier les transferts de données entre les sous-systèmes d'une application logicielle." },
+{ "title": "ENTRA (Microsoft Entra)", "description": "Microsoft Entra est la plateforme d’identité et d’accès de Microsoft (anciennement Azure Active Directory / Azure AD).\nElle gère : \nles utilisateurs (employés) \nles mots de passe \nles groupes \nles permissions \nl’authentification" },
+{ "title": "Event-Driven Architecture", "description": "Basée sur événements (Service Bus, Event Grid)." },
+{ "title": "IAM (Identity and Access Management)", "description": "IAM = Gestion des identités et des accès.\nIl concerne: \n🔑 Authentification → Qui es-tu ?\n🛂 Autorisation → As-tu le droit ?\n👥 Gestion des rôles\n🔐 Politiques d’accès\nExemples de solutions: \nMicrosoft Entra ID (anciennement Azure AD)\nAuth0\nOkta" },
+{ "title": "IOT (Internet of Things)", "description": "L'Internet des Objets (IoT) désigne un vaste réseau d'objets physiques (capteurs, machines, appareils) connectés à Internet, capables de collecter, échanger des données et automatiser des tâches sans intervention humaine. Il transforme des objets du quotidien en outils intelligents, générant une grande quantité de données pour optimiser les performances." },
+{ "title": "KEYCLOAK", "description": "Keycloak est une solution open-source qui permet l'implantation interne d'un SSO (single sign-on) pour gérer les authentifications sur vos systèmes et vos applications. \nLors de l'élaboration de vos projets, cette solution facilite la mise en place d'une authentification sur votre application" },
+{ "title": "LIFT AND SHIFT", "description": "La migration « Lift and Shift », également appelée réhébergement ou migration sans modification, est une approche de migration cloud où les applications et l'infrastructure sont déplacées d'un environnement à l'autre sans apporter de modifications substantielles à l'architecture sous-jacente." },
+{ "title": "Load Balancer", "description": "Distribution du trafic.\nHaute disponibilité" },
+{ "title": "MONGODB", "description": "Base de données NoSQL orientée documents. \nStocke des données en JSON/BSON (documents) \nPas de schéma fixe \nTrès utilisée pour applications web modernes \nScalabilité horizontale facile \nAlternative aux bases SQL classiques (MySQL, SQL Server)" },
+{ "title": "OLAP (Online Analytical Processing) ", "description": "Systèmes optimisés pour l’analyse.\nRequêtes complexes\nAgrégations, statistiques\nDonnées historiques\nData warehouse, BI, reporting" },
+{ "title": "OLTP (Online Transactional Processing)", "description": "OLTP (Online Transaction Processing)\nSystèmes optimisés pour les transactions opérationnelles.\nBeaucoup d’écritures rapides\nDonnées actuelles\nExemples : applications métier, e-commerce\nBase transactionnelle." },
+{ "title": "ON PREMISE", "description": "Infrastructure hébergée localement: serveurs dans l’entreprise, pas dans le cloud, maintenance interne.\nOpposé de cloud computing.\n« On-premise » (ou sur site) désigne un modèle de déploiement informatique où les logiciels et les infrastructures sont installés, hébergés et maintenus directement dans les locaux ou sur les serveurs physiques d'une entreprise.\nContrairement au Cloud, l'entreprise est propriétaire de ses données et responsable de leur sécurité." },
+{ "title": "PaaS vs IaaS vs SaaS", "description": "🖥️ IaaS (Infrastructure as a Service)\nTu gères :\nVM\nOS\nPatchs\nMiddleware\nAzure exemple : Virtual Machines\n👉 Flexibilité maximale\n👉 Responsabilité maximale\n\n⚙️ PaaS (Platform as a Service)\nAzure gère :\nInfrastructure\nOS\nRuntime\nTu gères :\nTon code\nExemples :\nAzure App Service\nAzure SQL Database\nAzure Functions\n👉 Recommandé dans 80% des architectures modernes\n\n🌍 SaaS (Software as a Service)\nTu consommes un logiciel prêt à l’emploi.\nExemples :\nMicrosoft 365\nSalesforce\n👉 Aucune gestion technique\n\n🎯 Vision Architecte\nToujours privilégier :\nSaaS > PaaS > IaaS\nPourquoi ?\nMoins de maintenance\nMoins de surface d’attaque\nMoins de coût opérationnel" },
+{ "title": "Private Endpoint", "description": "Connexion privée à un service PaaS (ex : base de données) sans passer par Internet.\n👉 Concept clé en entreprise." },
+{ "title": "SBX (Sandbox)", "description": "Une sandbox (bac à sable) est un environnement informatique sécurisé et isolé qui permet d'exécuter des programmes, tester des logiciels ou ouvrir des fichiers suspects sans risquer d'endommager le système hôte, le réseau ou d'autres applications" },
+{ "title": "SCABILITY", "description": "La scalabilité est un terme employé dans le domaine de l'informatique matérielle et logicielle, pour définir la faculté d'un produit informatique à s'adapter aux fluctuations de la demande en conservant ses différentes fonctionnalités." },
+{ "title": "SENDGRID", "description": "SendGrid (propriété de Twilio) est une plateforme cloud leader de services de messagerie, utilisée pour l'envoi massif d'emails transactionnels (confirmation, réinitialisation de mot de passe) et marketing (newsletters). Il garantit une haute délivrabilitéévite le spam et permet d'envoyer des courriels via une API ou un relais SMTP, s'épargnant ainsi la maintenance de serveurs propres" },
+{ "title": "SENTRY", "description": "Sentry est une plateforme logicielle open source utilisée pour suivre, gérer et corriger les erreurs dans les applications. \nElle fonctionne en collectant des informations sur les erreurs et les exceptions qui se produisent dans le code et en fournissant une interface intuitive pour visualiser et analyser ces problèmes." },
+{ "title": "SERIALIZATION", "description": "Transformation d’un objet en format transportable. \nExemples: JSON, XML, Binary. \nUtilisé pour: API, stockage, files de messages, transmission réseau" },
+{ "title": "SNYK", "description": "Outil de sécurité pour développeurs.\nFonctions :\nScan des dépendances\nDétection de vulnérabilités\nAnalyse de containers\nAnalyse de code (SAST)\n👉 Intégré à GitHub, GitLab, Azure DevOps…\nObjectif : sécuriser le code dès le développement (Shift Left Security)." },
+{ "title": "STRUCTURIZR", "description": "Structurizr est un outil 'Architecture-as-Code' et un ensemble de bibliothèques permettant de créer des diagrammes d'architecture logicielle.\nOutil pour modéliser l’architecture logicielle.\nBasé sur le modèle C4.\nDiagrammes générés depuis du code.\nDocumentation d’architecture vivante." },
+{ "title": "SYSTEM ASSIGNED vs USER ASSIGNED (Managed Identity Azure)", "description": "🔹 System-assigned\nIdentité créée automatiquement pour une ressource\nLiée à cette ressource uniquement\nSupprimée si la ressource est supprimée\n👉 Simple mais non réutilisable\n\n🔹 User-assigned\nIdentité indépendante\nPeut être attachée à plusieurs ressources\nPersiste même si une ressource est supprimée\n👉 Réutilisable et plus flexible" },
+{ "title": "TERRAFORM", "description": "Terraform est un outil IAC, utilisé principalement par les équipes DevOps pour automatiser diverses tâches d'infrastructure. \nLe provisionnement de ressources cloud, par exemple, est l'un des principaux cas d'utilisation de Terraform." },
+{ "title": "VNet (Virtual Network)", "description": "Réseau privé Azure.\nSubnets\nIsolation\nPrivate endpoints" },
+{ "title": "YAGNI", "description": "YAGNI (anglicisme, acronyme anglais de you ain't gonna need it, qui peut se traduire par « vous n'en aurez pas besoin »). \nC'est un principe d'extreme programming qui déclare que les programmeurs ne devraient pas ajouter de fonctionnalité à un logiciel tant que celle-ci n'est pas absolument nécessaire." }
