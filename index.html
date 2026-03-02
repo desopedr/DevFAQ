@@ -135,12 +135,17 @@ function loadJSONviaXHR() {
 
     xhr.send();
 }
-
+    
 // 🔹 Rendu FAQ
 function renderFAQ(data) {
+    // 🔹 Tri alphabétique (insensible à la casse, compatible accents)
+    const sortedData = [...data].sort((a, b) =>
+        a.title.localeCompare(b.title, 'fr', { sensitivity: 'base' })
+    );
+
     list.innerHTML = "";
 
-    data.forEach(item => {
+    sortedData.forEach(item => {
         const div = document.createElement("div");
         div.className = "faq-item";
 
@@ -191,3 +196,4 @@ loadJSON();
 
 </body>
 </html>
+
