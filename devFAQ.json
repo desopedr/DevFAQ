@@ -72,11 +72,11 @@
     "description": "Structurizr est un outil 'Architecture-as-Code' et un ensemble de bibliothèques permettant de créer des diagrammes d'architecture logicielle.\nOutil pour modéliser l’architecture logicielle.\nBasé sur le modèle C4.\nDiagrammes générés depuis du code.\nDocumentation d’architecture vivante."
   },
   {
-    "title": "AaC (Architecture-as-Code)",
-    "description": "L'Architecture-as-Code (AaC) est une approche moderne de l'ingénierie logicielle qui consiste à définir, documenter et gérer l'architecture d'un système (logiciel ou infrastructure) sous forme de fichiers de code ou de fichiers de configuration lisibles par une machine."
+    "title": "AaC (Architecture-as-Code) vs IaC (Infrastructure as Code)",
+    "description": "AaC est une approche moderne de l'ingénierie logicielle qui consiste à définir, documenter et gérer l'architecture d'un système (logiciel ou infrastructure) sous forme de fichiers de code ou de fichiers de configuration lisibles par une machine.\n\nIaC, Gestion de l’infrastructure par code.\nDéploiement automatisé\nReproductibilité\nVersionnable\nExemples d’outils: \nTerraform\nBicep\nARM templates\nCloudFormation"
   },
   {
-    "title": "APP FUNCTION (Azure Function)",
+    "title": "Azure App Function",
     "description": "Fonction exécutée sans gérer de serveur (serverless).\nS’exécute sur événement (HTTP, timer, message…).\nIdéal pour micro-services ou automatisations.\nFacturation à l’exécution"
   },
   {
@@ -92,7 +92,7 @@
     "description": "OLTP (Online Transaction Processing)\nSystèmes optimisés pour les transactions opérationnelles.\nBeaucoup d’écritures rapides\nDonnées actuelles\nExemples : applications métier, e-commerce\nBase transactionnelle."
   },
   {
-    "title": "APIM (API Management)",
+    "title": "Azure APIM (API Management)",
     "description": "Azure API Management\nPasserelle pour gérer des APIs.\nFonctions principales :\nSécurité (authentification, quotas)\nMonitoring\nVersioning\nPortail développeur\nTransformation des requêtes\n👉 API Gateway + gestion complète"
   },
   {
@@ -103,10 +103,6 @@
     "title": "SERIALIZATION",
     "description": "Transformation d’un objet en format transportable. \nExemples: JSON, XML, Binary. \nUtilisé pour: API, stockage, files de messages, transmission réseau"
   },
-  {
-    "title": "IaC (Infrastructure as Code)",
-    "description": "Gestion de l’infrastructure par code.\nDéploiement automatisé\nReproductibilité\nVersionnable\nExemples d’outils: \nTerraform\nBicep\nARM templates\nCloudFormation"
-  },
    {
     "title": "DAPR (Distributed Application Runtime)",
     "description": "Runtime open-source pour simplifier le développement de microservices.\nDAPR fournit des blocs prêts à l’emploi: \nService-to-service communication\nPub/Sub\nState management\nSecrets\nObservabilité\n👉 Il fonctionne en sidecar avec Kubernetes ou localement.\nBut : écrire du code métier sans gérer la complexité réseau/distribuée."
@@ -116,7 +112,7 @@
     "description": "Plateforme Microsoft pour construire des applications distribuées et microservices.\nCaractéristiques :\nGestion de clusters\nHaute disponibilité\nAuto-scaling\nSupport containers + services stateful\n👉 Utilisé historiquement pour des systèmes massifs comme Azure SQL Database.\n⚠️ Aujourd’hui, beaucoup d’architectures modernes préfèrent Kubernetes."
   },
   {
-    "title": "AKS (Azure Kubernetes)",
+    "title": "Azure Kubernetes",
     "description": "Plateforme open-source d’orchestration de conteneurs.\nIl permet de :\nDéployer des containers (Docker)\nGérer le scaling automatique\nFaire du rolling update\nGérer la haute disponibilité\nSuperviser les services\n👉 C’est devenu le standard pour les architectures cloud-native.\nDans Azure: \nAzure Kubernetes Service (AKS)"
   },
   {
@@ -132,7 +128,7 @@
     "description": "Méthode pour décrire une architecture logicielle en 4 niveaux :\nContext — système dans son environnement\nContainer — applications / services\nComponent — composants internes\nCode — classes / implémentation\n👉 Très utilisé pour architecture moderne\nLe modèle C4 est une technique de modélisation graphique « allégée » pour documenter l'architecture logicielle, structurée en quatre niveaux hiérarchiques (Context, Containers, Components, Code). Il permet de visualiser un système à différents niveaux de détail, allant de la vue d'ensemble aux détails techniques, facilitant ainsi la communication au sein des équipes de développement."
   }, 
   {
-    "title": "AZURE SERVICE BUS",
+    "title": "Azure Service Bus",
     "description": "Système de messagerie entre applications.\nFiles d’attente (queues).\nTopics (pub/sub).\nCommunication asynchrone fiable. Permet de découpler les systèmes"
   },
   {
@@ -168,7 +164,7 @@
     "description": "Connexion privée à un service PaaS (ex : base de données) sans passer par Internet.\n👉 Concept clé en entreprise."
   },
   {
-    "title": "APP SERVICE",
+    "title": "Azure App Service",
     "description": "Azure App Service\nHébergement simplifié d’applications web/API."
   },
   {
@@ -196,6 +192,7 @@
     "description": "🔹 System-assigned\nIdentité créée automatiquement pour une ressource\nLiée à cette ressource uniquement\nSupprimée si la ressource est supprimée\n👉 Simple mais non réutilisable\n\n🔹 User-assigned\nIdentité indépendante\nPeut être attachée à plusieurs ressources\nPersiste même si une ressource est supprimée\n👉 Réutilisable et plus flexible"
   }
 ]
+
 
 
 
