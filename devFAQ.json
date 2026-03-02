@@ -80,54 +80,71 @@
     "description": "Fonction exécutée sans gérer de serveur (serverless). S’exécute sur événement (HTTP, timer, message…). Idéal pour micro-services ou automatisations. Facturation à l’exécution"
   },
   {
-    "title": "system assign vs user assign",
-    "description": "Desc"
-  },
-  {
     "title": "OLAP (Online Analytical Processing) ",
     "description": "Systèmes optimisés pour l’analyse.\nRequêtes complexes\nAgrégations, statistiques\nDonnées historiques\nData warehouse, BI, reporting"
   },
   {
     "title": "DEPENDABOT",
-    "description": "Desc"
+    "description": "GitHub\nOutil automatique qui met à jour les dépendances d’un projet.\nDétecte failles de sécurité\nPropose des Pull Requests automatiques\nIntégré à GitHub"
   },
   {
     "title": "OLTP (Online Transactional Processing)",
     "description": "OLTP (Online Transaction Processing)\nSystèmes optimisés pour les transactions opérationnelles.\nBeaucoup d’écritures rapides\nDonnées actuelles\nExemples : applications métier, e-commerce\nBase transactionnelle."
   },
   {
-    "title": "APIM",
-    "description": "Desc"
+    "title": "APIM (API Management)",
+    "description": "Azure API Management\nPasserelle pour gérer des APIs.\nFonctions principales :\nSécurité (authentification, quotas)\nMonitoring\nVersioning\nPortail développeur\nTransformation des requêtes\n👉 API Gateway + gestion complète"
   },
   {
     "title": "COSMOS",
-    "description": "Desc"
+    "description": "Azure Cosmos DB\nBase NoSQL distribuée globalement.\nTrès haute disponibilité\nMulti-modèles (SQL API, Mongo API…)\nFaible latence mondiale\n👉 Conçue pour applications cloud à grande échelle"
   },
   {
     "title": "SERIALIZATION",
     "description": "Transformation d’un objet en format transportable. \nExemples: JSON, XML, Binary. \nUtilisé pour: API, stockage, files de messages, transmission réseau"
   },
   {
-    "title": "IaC",
-    "description": "Desc"
+    "title": "IaC (Infrastructure as Code)",
+    "description": "Gestion de l’infrastructure par code.\nDéploiement automatisé\nReproductibilité\nVersionnable\nExemples d’outils: \nTerraform\nBicep\nARM templates\nCloudFormation"
   },
    {
     "title": "DAPR (Distributed Application Runtime)",
-    "description": "Desc"
+    "description": "Runtime open-source pour simplifier le développement de microservices.\nDAPR fournit des blocs prêts à l’emploi: \nService-to-service communication\nPub/Sub\nState management\nSecrets\nObservabilité\n👉 Il fonctionne en sidecar avec Kubernetes ou localement.\nBut : écrire du code métier sans gérer la complexité réseau/distribuée."
   }, 
   {
-    "title": "Kubernetes",
-    "description": "Desc"
+    "title": "Azure Service Fabric",
+    "description": "Plateforme Microsoft pour construire des applications distribuées et microservices.\nCaractéristiques :\nGestion de clusters\nHaute disponibilité\nAuto-scaling\nSupport containers + services stateful\n👉 Utilisé historiquement pour des systèmes massifs comme Azure SQL Database.\n⚠️ Aujourd’hui, beaucoup d’architectures modernes préfèrent Kubernetes."
+  },
+  {
+    "title": "AKS (Azure Kubernetes)",
+    "description": "Plateforme open-source d’orchestration de conteneurs.\nIl permet de :\nDéployer des containers (Docker)\nGérer le scaling automatique\nFaire du rolling update\nGérer la haute disponibilité\nSuperviser les services\n👉 C’est devenu le standard pour les architectures cloud-native.\nDans Azure: \nAzure Kubernetes Service (AKS)"
+  },
+  {
+    "title": "SNYK",
+    "description": "Outil de sécurité pour développeurs.\nFonctions :\nScan des dépendances\nDétection de vulnérabilités\nAnalyse de containers\nAnalyse de code (SAST)\n👉 Intégré à GitHub, GitLab, Azure DevOps…\nObjectif : sécuriser le code dès le développement (Shift Left Security)."
+  },
+  {
+    "title": "IAM (Identity and Access Management)",
+    "description": "IAM = Gestion des identités et des accès.\nIl concerne: \n🔑 Authentification → Qui es-tu ?\n🛂 Autorisation → As-tu le droit ?\n👥 Gestion des rôles\n🔐 Politiques d’accès\nExemples de solutions: \nMicrosoft Entra ID (anciennement Azure AD)\nAuth0\nOkta"
   },
    {
-    "title": "C4",
-    "description": "Le modèle C4 est une technique de modélisation graphique « allégée » pour documenter l'architecture logicielle, structurée en quatre niveaux hiérarchiques (Context, Containers, Components, Code). Il permet de visualiser un système à différents niveaux de détail, allant de la vue d'ensemble aux détails techniques, facilitant ainsi la communication au sein des équipes de développement."
+    "title": "C4 MODEL",
+    "description": "Méthode pour décrire une architecture logicielle en 4 niveaux :\nContext — système dans son environnement\nContainer — applications / services\nComponent — composants internes\nCode — classes / implémentation\n👉 Très utilisé pour architecture moderne\nLe modèle C4 est une technique de modélisation graphique « allégée » pour documenter l'architecture logicielle, structurée en quatre niveaux hiérarchiques (Context, Containers, Components, Code). Il permet de visualiser un système à différents niveaux de détail, allant de la vue d'ensemble aux détails techniques, facilitant ainsi la communication au sein des équipes de développement."
   }, 
   {
     "title": "AZURE SERVICE BUS",
     "description": "Système de messagerie entre applications. Files d’attente (queues). Topics (pub/sub). Communication asynchrone fiable. Permet de découpler les systèmes"
+  },
+  {
+    "title": "BFF (Backend For Frontend)",
+    "description": "Pattern d’architecture.\n👉 Un backend spécifique pour chaque type de client :\nWeb\nMobile\nTablet\nIoT\nBut : optimiser les réponses pour chaque interface."
+  },
+  {
+    "title": "SYSTEM ASSIGNED vs USER ASSIGNED (Managed Identity Azure)",
+    "description": "🔹 System-assigned\nIdentité créée automatiquement pour une ressource\nLiée à cette ressource uniquement\nSupprimée si la ressource est supprimée\n👉 Simple mais non réutilisable\n\n🔹 User-assigned\nIdentité indépendante\nPeut être attachée à plusieurs ressources\nPersiste même si une ressource est supprimée\n👉 Réutilisable et plus flexible"
   }
 ]
+
 
 
 
