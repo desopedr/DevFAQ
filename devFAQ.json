@@ -1,3 +1,4 @@
+[
 { "title": "AaC (Architecture-as-Code) vs IaC (Infrastructure as Code)", "description": "AaC est une approche moderne de l'ingénierie logicielle qui consiste à définir, documenter et gérer l'architecture d'un système (logiciel ou infrastructure) sous forme de fichiers de code ou de fichiers de configuration lisibles par une machine.\n\nIaC, Gestion de l’infrastructure par code.\nDéploiement automatisé\nReproductibilité\nVersionnable\nExemples d’outils: \nTerraform\nBicep\nARM templates\nCloudFormation" },
 { "title": "ADR (Architecture Decision Record)", "description": "L'ADR est un journal de décisions prises par l'équipe de développement. \nLes décisions peuvent être : Quel type de bases de données, quelle architecture, quel langage, quelle modélisation, etc." },
 { "title": "Azure APIM (API Management)", "description": "Azure API Management\nPasserelle pour gérer des APIs.\nFonctions principales :\nSécurité (authentification, quotas)\nMonitoring\nVersioning\nPortail développeur\nTransformation des requêtes\n👉 API Gateway + gestion complète" },
@@ -46,3 +47,4 @@
 { "title": "TERRAFORM", "description": "Terraform est un outil IAC, utilisé principalement par les équipes DevOps pour automatiser diverses tâches d'infrastructure. \nLe provisionnement de ressources cloud, par exemple, est l'un des principaux cas d'utilisation de Terraform." },
 { "title": "VNet (Virtual Network)", "description": "Réseau privé Azure.\nSubnets\nIsolation\nPrivate endpoints" },
 { "title": "YAGNI", "description": "YAGNI (anglicisme, acronyme anglais de you ain't gonna need it, qui peut se traduire par « vous n'en aurez pas besoin »). \nC'est un principe d'extreme programming qui déclare que les programmeurs ne devraient pas ajouter de fonctionnalité à un logiciel tant que celle-ci n'est pas absolument nécessaire." }
+]
