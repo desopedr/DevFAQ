@@ -140,10 +140,63 @@
     "description": "Pattern d’architecture.\n👉 Un backend spécifique pour chaque type de client :\nWeb\nMobile\nTablet\nIoT\nBut : optimiser les réponses pour chaque interface."
   },
   {
+    "title": "Azure Regions & Availability Zones",
+    "description": "\nRegion = zone géographique (ex: West Europe)\nAvailability Zone (AZ) = datacenters séparés physiquement dans une même région\nPermet haute disponibilité et résilience\n👉 Un architecte doit toujours penser résilience régionale et multi-zone."
+  },
+  {
+    "title": "Azure Subscription",
+    "description": "Unité de facturation\nLimite de quotas\nIsolation logique\n👉 Architecture entreprise = souvent plusieurs subscriptions."
+  },
+  {
+    "title": "Azure Resource Group",
+    "description": "Conteneur logique pour regrouper des ressources Azure.\nGestion simplifiée\nDéploiement par environnement (Dev / Test / Prod)\nSuppression groupée possible"
+  },
+  {
+    "title": "Azure Key Vault",
+    "description": "Stockage sécurisé: \nSecrets\nClés\nCertificats\nJamais de secrets en dur dans le code."
+  },
+  {
+    "title": "VNet (Virtual Network)",
+    "description": "Réseau privé Azure.\nSubnets\nIsolation\nPrivate endpoints"
+  },
+  {
+    "title": "Load Balancer",
+    "description": "Distribution du trafic.\nHaute disponibilité"
+  },
+  {
+    "title": "Private Endpoint",
+    "description": "Connexion privée à un service PaaS (ex : base de données) sans passer par Internet.\n👉 Concept clé en entreprise."
+  },
+  {
+    "title": "APP SERVICE",
+    "description": "Azure App Service\nHébergement simplifié d’applications web/API."
+  },
+  {
+    "title": "CI/CD (Continuous Integration / Continuous Delivery)",
+    "description": "CI – Continuous Integration\nPrincipe: \nChaque modification de code est automatiquement :\nBuild\nTestée\nValidée\n\nObjectif: \nDétecter les erreurs tôt\nÉviter les conflits massifs\nMaintenir un code toujours intégrable\n\nCD – Continuous Delivery / Deployment\nAprès validation: \nPackaging automatique\nDéploiement automatique (staging / prod)\nRollback possible\n\nExemple dans Azure\nAzure DevOps\nGitHub Actions\n\nPipeline typique: \nCommit\nBuild\nTests unitaires\nScan sécurité (Snyk / Defender)\nCréation image Docker\nPush vers registry\nDéploiement AKS / App Service"
+  },
+  {
+    "title": "Azure Policy",
+    "description": "Outil de gouvernance.\nPermet de :\nImposer des règles\nAuditer la conformité\nBloquer des déploiements\n\n📌 Exemples concrets\nInterdire création de VM sans tag\nForcer chiffrement stockage\nAutoriser seulement certaines régions\nObliger SKU spécifique"
+  },
+  {
+    "title": "Event-Driven Architecture",
+    "description": "Basée sur événements (Service Bus, Event Grid)."
+  },
+  {
+    "title": "PaaS vs IaaS vs SaaS",
+    "description": "🖥️ IaaS (Infrastructure as a Service)\nTu gères :\nVM\nOS\nPatchs\nMiddleware\nAzure exemple : Virtual Machines\n👉 Flexibilité maximale\n👉 Responsabilité maximale\n\n⚙️ PaaS (Platform as a Service)\nAzure gère :\nInfrastructure\nOS\nRuntime\nTu gères :\nTon code\nExemples :\nAzure App Service\nAzure SQL Database\nAzure Functions\n👉 Recommandé dans 80% des architectures modernes\n\n🌍 SaaS (Software as a Service)\nTu consommes un logiciel prêt à l’emploi.\nExemples :\nMicrosoft 365\nSalesforce\n👉 Aucune gestion technique\n\n🎯 Vision Architecte\nToujours privilégier :\nSaaS > PaaS > IaaS\nPourquoi ?\nMoins de maintenance\nMoins de surface d’attaque\nMoins de coût opérationnel"
+  },
+  {
+    "title": "CQRS (Command Query Responsibility Segregation)",
+    "description": "Pattern d’architecture. Principe :\n🔹 Command = écriture\n🔹 Query = lecture\nOn sépare les modèles et parfois les bases de données.\n\n🎯 Pourquoi ? Parce que: \nLes lectures sont nombreuses\nLes écritures ont logique métier complexe\nLes besoins de performance diffèrent\n\n🏗️ Exemple Azure: \nÉcriture → Azure SQL\nLecture → Azure Cosmos DB\nSynchronisation via Service Bus\n\n🧠 Architecte avancé CQRS peut être combiné avec :\nEvent Sourcing\nArchitecture événementielle\nMicroservices"
+  },
+  {
     "title": "SYSTEM ASSIGNED vs USER ASSIGNED (Managed Identity Azure)",
     "description": "🔹 System-assigned\nIdentité créée automatiquement pour une ressource\nLiée à cette ressource uniquement\nSupprimée si la ressource est supprimée\n👉 Simple mais non réutilisable\n\n🔹 User-assigned\nIdentité indépendante\nPeut être attachée à plusieurs ressources\nPersiste même si une ressource est supprimée\n👉 Réutilisable et plus flexible"
   }
 ]
+
 
 
 
