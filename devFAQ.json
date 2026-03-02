@@ -45,7 +45,7 @@
   },
   {
     "title": "SENDGRID",
-    "description": "Desc"
+    "description": "SendGrid (propriété de Twilio) est une plateforme cloud leader de services de messagerie, utilisée pour l'envoi massif d'emails transactionnels (confirmation, réinitialisation de mot de passe) et marketing (newsletters). Il garantit une haute délivrabilitéévite le spam et permet d'envoyer des courriels via une API ou un relais SMTP, s'épargnant ainsi la maintenance de serveurs propres"
   },
   {
     "title": "MONGODB",
@@ -65,35 +65,35 @@
   },
   {
     "title": "ON PREMISE",
-    "description": "Desc"
+    "description": "Infrastructure hébergée localement: serveurs dans l’entreprise, pas dans le cloud, maintenance interne. Opposé de cloud computing. « On-premise » (ou sur site) désigne un modèle de déploiement informatique où les logiciels et les infrastructures sont installés, hébergés et maintenus directement dans les locaux ou sur les serveurs physiques d'une entreprise. Contrairement au Cloud, l'entreprise est propriétaire de ses données et responsable de leur sécurité."
   },
   {
     "title": "STRUCTURIZR",
-    "description": "Desc"
+    "description": "Structurizr est un outil 'Architecture-as-Code' et un ensemble de bibliothèques permettant de créer des diagrammes d'architecture logicielle, basés sur le modèle C4. Outil pour modéliser l’architecture logicielle. Basé sur le modèle C4. Diagrammes générés depuis du code. Documentation d’architecture vivante."
   },
   {
-    "title": "C4",
-    "description": "Desc"
+    "title": "AaC (Architecture-as-Code)",
+    "description": "L'Architecture-as-Code (AaC) est une approche moderne de l'ingénierie logicielle qui consiste à définir, documenter et gérer l'architecture d'un système (logiciel ou infrastructure) sous forme de fichiers de code ou de fichiers de configuration lisibles par une machine."
   },
   {
-    "title": "AIB",
-    "description": "Desc"
+    "title": "APP FUNCTION (Azure Function)",
+    "description": "Fonction exécutée sans gérer de serveur (serverless). S’exécute sur événement (HTTP, timer, message…). Idéal pour micro-services ou automatisations. Facturation à l’exécution"
   },
   {
     "title": "system assign vs user assign",
     "description": "Desc"
   },
   {
-    "title": "OLAP",
-    "description": "Desc"
+    "title": "OLAP (Online Analytical Processing) ",
+    "description": "Systèmes optimisés pour l’analyse.\nRequêtes complexes\nAgrégations, statistiques\nDonnées historiques\nData warehouse, BI, reporting"
   },
   {
     "title": "DEPENDABOT",
     "description": "Desc"
   },
   {
-    "title": "OLTP",
-    "description": "Desc"
+    "title": "OLTP (Online Transactional Processing)",
+    "description": "OLTP (Online Transaction Processing)\nSystèmes optimisés pour les transactions opérationnelles.\nBeaucoup d’écritures rapides\nDonnées actuelles\nExemples : applications métier, e-commerce\nBase transactionnelle."
   },
   {
     "title": "APIM",
@@ -104,8 +104,8 @@
     "description": "Desc"
   },
   {
-    "title": "serialization",
-    "description": "Desc"
+    "title": "SERIALIZATION",
+    "description": "Transformation d’un objet en format transportable. \nExemples: JSON, XML, Binary. \nUtilisé pour: API, stockage, files de messages, transmission réseau"
   },
   {
     "title": "IaC",
@@ -118,8 +118,17 @@
   {
     "title": "Kubernetes",
     "description": "Desc"
+  },
+   {
+    "title": "C4",
+    "description": "Le modèle C4 est une technique de modélisation graphique « allégée » pour documenter l'architecture logicielle, structurée en quatre niveaux hiérarchiques (Context, Containers, Components, Code). Il permet de visualiser un système à différents niveaux de détail, allant de la vue d'ensemble aux détails techniques, facilitant ainsi la communication au sein des équipes de développement."
+  }, 
+  {
+    "title": "AZURE SERVICE BUS",
+    "description": "Système de messagerie entre applications. Files d’attente (queues). Topics (pub/sub). Communication asynchrone fiable. Permet de découpler les systèmes"
   }
 ]
+
 
 
 
