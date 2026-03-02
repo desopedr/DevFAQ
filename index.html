@@ -91,6 +91,7 @@ h1 {
 <div id="noResults">Aucun résultat</div>
 
 <script>
+const jsonFile = "devFAQ.json";
 const list = document.getElementById("faqList");
 const searchBox = document.getElementById("searchBox");
 const noResults = document.getElementById("noResults");
@@ -99,7 +100,7 @@ let faqData = [];
 
 // 🔹 Fonction pour charger JSON
 function loadJSON() {
-    fetch("devFAQ.json")
+    fetch(jsonFile)
         .then(response => {
             if (!response.ok) throw new Error("Fetch failed");
             return response.json();
@@ -117,7 +118,7 @@ function loadJSON() {
 // 🔹 Méthode alternative compatible file://
 function loadJSONviaXHR() {
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", "faq.json", true);
+    xhr.open("GET", jsonFile, true);
 
     xhr.onload = function () {
         if (xhr.status === 200 || xhr.status === 0) {
@@ -125,7 +126,7 @@ function loadJSONviaXHR() {
             renderFAQ(faqData);
         } else {
             list.innerHTML =
-                "Impossible de charger faq.json.<br>Vérifie qu'il est dans le même dossier.";
+                "Impossible de charger " + jsonFile + ".<br>Vérifie qu'il est dans le même dossier.";
         }
     };
 
@@ -196,4 +197,5 @@ loadJSON();
 
 </body>
 </html>
+
 
