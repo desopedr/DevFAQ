@@ -99,7 +99,7 @@ let faqData = [];
 
 // 🔹 Fonction pour charger JSON
 function loadJSON() {
-    fetch("devFAQ.json")
+    fetch("./devFAQ.json")
         .then(response => {
             if (!response.ok) throw new Error("Fetch failed");
             return response.json();
@@ -196,6 +196,7 @@ loadJSON();
 
 </body>
 </html>
+
 
 
 
